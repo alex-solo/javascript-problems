@@ -1,0 +1,59 @@
+@import url("whitespace-reset.css");
+
+body {
+  background-color: #f0f4f4;
+  color: black;
+  font-family: serif;
+  font-size: 22px;
+}
+
+main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+form#quiz {
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#quiz fieldset {
+  width: 100%;
+}
+
+div.question {
+  margin-bottom: 20px;
+}
+
+.question p {
+  margin-bottom: 5px;
+}
+
+.question label {
+  display: block;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.message {
+  height: 40px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.correct {
+  border: 1px solid green;
+}
+
+.wrong {
+  border: 1px solid red;
+}

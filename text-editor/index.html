@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor</title>
+  <link rel="stylesheet" href="stylesheets/editor.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1>Rich Text Editor</h1>
+  <div id="editor">
+    <div id="buttons">
+      <button type="button" id="bold">Bold</button>
+      <button type="button" id="italic">Italics</button>
+      <button type="button" id="underline">Underline</button>
+      <button type="button" id="strikeThrough">Strikethrough</button>
+      <button type="button" id="createLink">Link</button>
+      <button type="button" id="insertUnorderedList">ul</button>
+      <button type="button" id="insertOrderedList">ol</button>
+      <button type="button" id="justifyLeft">Left</button>
+      <button type="button" id="justifyRight">Right</button>
+      <button type="button" id="justifyCenter">Center</button>
+      <button type="button" id="justifyFull">Justify</button>
+    </div>
+    
+    <div id="text_box" contenteditable="true">
+      
+    </div>
+  </div>
+  <script src="javascripts/editor.js"></script>
+</body>
+</html>

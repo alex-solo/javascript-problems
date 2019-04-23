@@ -1,0 +1,120 @@
+@import url("whitespace-reset.css");
+
+body {
+  background-color: #e29921;
+  color: black;
+  font-family: serif;
+  font-size: 18px;
+}
+
+h1, h2 {
+  text-align: left;
+  font-size: 24px;
+  color: #fff;
+  width: 700px;
+  margin: 70px auto 0 auto;
+}
+
+form {
+  width: 700px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+form fieldset {
+  border: none;
+}
+
+dd {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.account_info {
+  margin-top: 20px;
+}
+
+.account_info label {
+  color: #395870;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.account_info input {
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #c6c7cc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  color: #636466;
+  padding: 6px;
+  margin-top: 6px;
+  margin-right: 50px;
+  width: 40%;
+  display: inline-block;
+}
+
+.account_info span {
+  width: auto;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: right; 
+}
+
+.form_error, .error_message {
+  color: red;
+}
+
+span.error_message {
+
+}
+
+input[type="text"] {
+  border: 2px solid black;
+}
+
+input.invalid_field {
+  border: 2px solid red;
+}
+
+input[name="credit_card"] {
+  width: 60px;
+  margin: 0;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+  border: 2px solid lime;
+}
+
+input[type="submit"] {
+  outline: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background: green;
+  color: white;
+  font-size: 18px;
+}
+
+#serialized {
+  width: 700px;
+  background: white;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  overflow: scroll;
+}
+
+#serialized p {
+  /* padding: 10px; */
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+}

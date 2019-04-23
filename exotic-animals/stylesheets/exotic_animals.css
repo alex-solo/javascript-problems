@@ -1,0 +1,51 @@
+@import url("whitespace-reset.css");
+
+body {
+  background-color: #333255;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+}
+
+#exotic_animals {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  
+}
+
+figure {
+  position: relative;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background: #fff;
+  width: 21%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 26px;
+}
+
+figcaption {
+  display: none;
+  background: rgba(0, 0, 20, 0.7);
+  padding: 10px;
+  position: absolute;
+  width: 300px;
+  border-radius: 3px;
+  color: #fff;
+  z-index: 5;
+}

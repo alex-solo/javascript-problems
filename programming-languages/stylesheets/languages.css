@@ -1,0 +1,25 @@
+body {
+  background: #999900;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+#programming_languages {
+  background-color: #fff;
+  width: 650px;
+  margin: 0 auto;
+  color: black;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+#programming_languages a {
+  text-decoration: none;
+  background-color: #999900;
+  padding: 4px;
+  border-radius: 3px;
+  color: #fff;
+}

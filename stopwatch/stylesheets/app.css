@@ -1,0 +1,46 @@
+@import url("whitespace-reset.css");
+
+body {
+  background-color: #a19123;
+  color: black;
+  font-family: sans-serif;
+  font-size: 90px;
+}
+
+div, span {
+  display: inline-block;
+}
+
+span {
+  margin: 0 -15px 0 -15px;
+}
+
+#stopwatch {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 200px 0;
+  box-sizing: border-box;
+}
+
+#controls {
+  display: block;
+}
+
+#controls button {
+  display: inline-block;
+  background-color: #a19123;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+#controls button:focus {
+  outline: 0;
+}
+
+#controls button:hover {
+  background-color: #928320;
+}

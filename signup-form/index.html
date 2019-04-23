@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="stylesheets/form.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1>Sign up Form</h1>
+  
+  <form action="#" method="post" novalidate>
+    <p class="form_error"></p>
+    <fieldset class="account_info">
+      <dl>
+        <dt>
+          <label for="first_name">First Name</label>
+        </dt>
+        <dd>
+          <input type="text" class="letters_only" id="first_name" name="first_name" pattern="[A-Za-z]+" required>
+          <span class="error_message"></span>
+        </dd>
+        <dt>
+          <label for="last_name">Last Name</label>
+        </dt>
+        <dd>
+          <input type="text" class="letters_only" id="last_name" name="last_name" pattern="[A-Za-z]+" required>
+          <span class="error_message"></span>
+        </dd>
+        <dt>
+          <label for="email">Email</label>
+        </dt>
+        <dd>
+          <input type="text" id="email" name="email" placeholder="someone@email.com" pattern=".+@.+" required>
+          <span class="error_message"></span>
+        </dd>
+        <dt>
+          <label for="password">Password</label>
+        </dt>
+        <dd>
+          <input type="text" name="password" id="password" pattern=".{10,}" required>
+          <span class="error_message"></span>
+        </dd>
+        <dt>
+          <label for="phone_num">Phone Number</label>
+        </dt>
+        <dd>
+          <input type="text" name="phone_num" id="phone_num" pattern="\d{3}-\d{3}-\d{4}" placeholder="123-345-4567">
+          <span class="error_message"></span>
+        </dd>
+        <dt>
+          <label for="credit_card">Credit Card</label>
+        </dt>
+        <dd>
+          <input type="text" class="digits_only" name="credit_card" id="cd1" pattern="\d{4}" minlength="4" maxlength="4" required>
+          -
+          <input type="text" class="digits_only" name="credit_card" id="cd2" pattern="\d{4}" minlength="4" maxlength="4" required>
+          -
+          <input type="text" class="digits_only" name="credit_card" id="cd3" pattern="\d{4}" minlength="4" maxlength="4" required>
+          -
+          <input type="text" class="digits_only" name="credit_card" id="cd4" pattern="\d{4}" minlength="4" maxlength="4" required>
+          <span class="error_message"></span>
+        </dd>
+      </dl>
+
+      <input type="submit" name="submit" value="Sign Up">
+    </fieldset>
+  </form>
+  <h2>Serialized Form</h2>
+  <div id="serialized">
+    <p></p>
+  </div>
+  <script src="javascripts/form.js"></script>
+</body>
+</html>

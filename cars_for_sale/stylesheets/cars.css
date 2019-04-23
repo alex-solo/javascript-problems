@@ -1,0 +1,128 @@
+@import url("whitespace-reset.css");
+
+body {
+  background-color: #fff;
+  color: black;
+  font-family: serif;
+  font-size: 18px;
+}
+
+header {
+  height: 100px;
+  background: #e29921;
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+header label {
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+.select-style {
+  border: 1px solid #fff;
+  position: relative;
+  text-align: middle;
+  display: inline-block;
+  width: 85px;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.select-style::before,
+.select-style::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.select-style::after {
+  /*  Custom dropdown arrow */
+  /*content: "\25BC"; */
+  width: 20px;
+  height: 100%;
+  background: url("./../images/arrow.svg") no-repeat;
+  background-position: center;
+  background-size: 85%;
+  filter: brightness(0) invert(1);
+}
+
+.select-style select {
+  padding: 5px 8px;
+  border: none;
+  color: #fff;
+  width: 100%;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+}
+
+.select-style select:focus {
+  outline: none;
+}
+
+header a {
+  border: 1px solid #fff;
+  font-family: sans-serif;
+  font-weight: 300;
+  text-align: middle;
+  display: inline-block;
+  width: auto;
+  border-radius: 4px;
+  margin-left: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#cars {
+  margin-top: 30px;
+  display: block;
+}
+
+.car {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 190px;
+  padding: 0 0 20px 20px;
+  background-color: white;
+}
+
+.car a {
+  border: 1px solid #fff;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-align: middle;
+  display: inline-block;
+  width: auto;
+  border-radius: 4px;
+  margin-top: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #e29921;
+}
+
+#cars img {
+  width: 100%;
+}
